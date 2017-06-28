@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d9092f7a_40c692e9",
+        "filename": "map.cc",
+        "patchSetId": 1
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 1011624
+      },
+      "writtenOn": "2017-06-28T13:00:50Z",
+      "side": 1,
+      "message": "problem with your editor? ;)",
+      "range": {
+        "startLine": 193,
+        "startChar": 0,
+        "endLine": 193,
+        "endChar": 2
+      },
+      "revId": "799c884ad07f879b127329b7232b5271c6035944",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
