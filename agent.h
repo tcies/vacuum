@@ -1,6 +1,10 @@
 #ifndef AGENT_H_
 #define AGENT_H_
 
+#include <stack>
+#include <map>
+#include <vector>
+
 #include "battery.h"
 #include "geometry.h"
 #include "map.h"
@@ -21,6 +25,10 @@ class Agent {
   // Returns true if it's required to return home, provides necessary direction
   // to direction.
   bool returnHomeRequired(const Perception& p, Direction* direction);
+  
+  Direction frontierBasedExploration(const Perception& p);
+  
+  void processPerception(const Perception& p);
 
   // Whether the agent has still some battery left.
   bool IsAlive() const;
@@ -30,6 +38,26 @@ class Agent {
   const Battery* battery_;
   // Not owned by the agent.
   const int* time_;
+  
+  struct Coordinate {
+    int x;
+    int y;
+    Coordinate operator +(const Coordinate& other) const;
+    bool operator <(const Coordinate& other) const;
+  };
+  Coordinate current_location_;
+  std::map<Coordinate, bool> occupied_;
+  // Using a stack allows very effective processing of frontiers:
+  // Most recently added frontiers will be processed first.
+  std::stack<Coordinate> frontiers_;
+  // Used once a goal frontier is set, to navigate towards the frontier.
+  std::map<Coordinate, int> distance_from_goal_;
+  
+  struct Option {
+    Direction name;
+    Coordinate value;
+  };
+  std::vector<Option> options_;
 };
 
 #endif  // AGENT_H_
