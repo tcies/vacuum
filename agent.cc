@@ -13,7 +13,7 @@ Direction Agent::NextDirection(const Perception& p) {
   if (strategy == 0) {
     direction = randomStrategy(p);
   } else if (strategy == 1) {
-    
+	direction = followWallsStrategy(p);
   }
   
   Direction return_direction;
@@ -46,4 +46,20 @@ bool Agent::returnHomeRequired(const Perception& p, Direction* direction) {
 
 bool Agent::IsAlive() const {
   return battery_->Level() > 0;
+}
+
+Direction Agent::followWallsStrategy(const Perception& p) {
+  if (p.HasObstacle(Direction::UP)) {
+	// TODO: react to obstacle
+  }
+  if (p.HasObstacle(Direction::LEFT)) {
+	// TODO: react to obstacle
+  }
+  if (p.HasObstacle(Direction::DOWN)) {
+	// TODO: react to obstacle
+  }
+  if (p.HasObstacle(Direction::RIGHT)) {
+	// TODO: react to obstacle
+  }
+  return Direction::NONE;
 }

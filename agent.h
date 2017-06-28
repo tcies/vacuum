@@ -25,6 +25,8 @@ class Agent {
   // Whether the agent has still some battery left.
   bool IsAlive() const;
 
+  Direction followWallsStrategy(const Perception& p);
+
  private:
   // Not owned by the agent.
   const Battery* battery_;
