@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "eb45a8eb_f3d33352",
+        "filename": "agent.cc",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011639
+      },
+      "writtenOn": "2017-06-28T13:59:42Z",
+      "side": 1,
+      "message": "nice",
+      "revId": "153a88227c544a8274e640d02577e86c6baa0d9a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "043220de_364ae2d0",
+        "filename": "agent.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011639
+      },
+      "writtenOn": "2017-06-28T13:59:42Z",
+      "side": 1,
+      "message": "The linter :)",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 2
+      },
+      "revId": "153a88227c544a8274e640d02577e86c6baa0d9a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "29c169a7_e3922eb4",
+        "filename": "agent.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1011639
+      },
+      "writtenOn": "2017-06-28T13:59:42Z",
+      "side": 1,
+      "message": "What about some comments",
+      "range": {
+        "startLine": 31,
+        "startChar": 7,
+        "endLine": 31,
+        "endChar": 23
+      },
+      "revId": "153a88227c544a8274e640d02577e86c6baa0d9a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
