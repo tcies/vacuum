@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c7fd5f75_81ac3d5e",
+        "filename": "agent.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1011624
+      },
+      "writtenOn": "2017-06-28T13:52:14Z",
+      "side": 1,
+      "message": "We have not discussed the guidelines we should follow. It seems that the original code uses uppercase for the first word of the member functions, should we agree on that too?",
+      "range": {
+        "startLine": 28,
+        "startChar": 12,
+        "endLine": 28,
+        "endChar": 31
+      },
+      "revId": "88968629ece52aaa6b3bc8acb210a0b398097633",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
