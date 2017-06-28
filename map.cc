@@ -2,6 +2,7 @@
 
 #include <cassert>
 #include <iostream>
+#include <unistd.h>
 
 #include "utils.h"
 
@@ -187,6 +188,9 @@ bool Map::InitAgentAndChargingStation() {
 }
 
 void Map::Print() const {
+  // Sleep a bit so we see what happens.
+  usleep(100000);
+  
   for (int x = 0; x < x_size_; ++x) {
     for (int y = 0; y < y_size_; ++y) {
       if (obstacles_map_.Get(x, y) > 0) {
