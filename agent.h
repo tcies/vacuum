@@ -15,6 +15,12 @@ class Agent {
 
   // Get the next direction of the agent based on the current perception |p|.
   Direction NextDirection(const Perception& p);
+  
+  Direction randomStrategy(const Perception& p);
+  
+  // Returns true if it's required to return home, provides necessary direction
+  // to direction.
+  bool returnHomeRequired(const Perception& p, Direction* direction);
 
   // Whether the agent has still some battery left.
   bool IsAlive() const;
