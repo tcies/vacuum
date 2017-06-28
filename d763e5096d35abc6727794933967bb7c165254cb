@@ -16,6 +16,29 @@
       "revId": "d763e5096d35abc6727794933967bb7c165254cb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dbb5e494_f125a53b",
+        "filename": "agent.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1011578
+      },
+      "writtenOn": "2017-06-28T13:20:47Z",
+      "side": 1,
+      "message": "consider running a linter :)",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 2
+      },
+      "revId": "d763e5096d35abc6727794933967bb7c165254cb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
