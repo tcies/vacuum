@@ -27,4 +27,25 @@ TEST(Agent_NextDirection) {
   agent.NextDirection(p);
 }
 
+TEST(Agent_returnHomeRequiredEnoughBattery) {
+  Battery battery(51);
+  int time = 100;
+  Agent agent(&battery, &time);
+  Perception p;
+  Direction direction;
+  bool go_home = agent.returnHomeRequired(p, &direction);
+  assert(!go_home);
+}
+
+TEST(Agent_returnHomeRequiredNotEnoughBattery) {
+  Battery battery(49);
+  int time = 100;
+  Agent agent(&battery, &time);
+  Perception p;
+  Direction direction;
+  bool go_home = agent.returnHomeRequired(p, &direction);
+  assert(go_home);
+}
+
+
 
